@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+
+        android:id="@+id/gambar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/gundam2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hitam" />
+
+    <TextView
+        android:id="@+id/namaAplikasi_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/deskripsi_aplikasi_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck"
+        tools:text="Nama_Gundam" />
+
+    <TextView
+
+        android:id="@+id/deskripsi_aplikasi_detail"
+        android:layout_width="321dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="112dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/buttoncart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/namaAplikasi_detail"
+        tools:text="Deskripsi_Gundam" />
+
+    <Button
+        android:id="@+id/buttoncart"
+        android:layout_width="300dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        android:text="Add to cart $50"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/tombolgacha"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/heart"
+        app:iconSize="40dp"
+        android:drawableTop="@drawable/cart"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/buttoncart" />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/deskripsi_aplikasi_detail"
+        app:layout_constraintStart_toStartOf="@+id/deskripsi_aplikasi_detail"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <TextView
+        android:id="@+id/material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/brand"
+        app:layout_constraintTop_toBottomOf="@+id/brand" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number"
+        app:layout_constraintTop_toBottomOf="@id/material"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/material"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        app:layout_constraintTop_toBottomOf="@id/number"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/number"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/brandDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:text="Bandai Hobby"
+        app:layout_constraintStart_toEndOf="@id/brand"
+        app:layout_constraintTop_toBottomOf="@id/deskripsi_aplikasi_detail" />
+
+    <TextView
+        android:id="@+id/materialDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ウルトラマン"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/brandDS"
+        app:layout_constraintTop_toBottomOf="@+id/brandDS" />
+
+    <TextView
+        android:id="@+id/numberDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150"
+        app:layout_constraintTop_toBottomOf="@id/materialDS"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/materialDS"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <TextView
+        android:id="@+id/aboutDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Celebrating the 40th anyversary of Gunpla, is the arrival of the"
+        app:layout_constraintTop_toBottomOf="@id/about"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/about"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/aboutDS2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HG Gundam RX-78-02 (The origin ver)"
+        app:layout_constraintTop_toBottomOf="@id/aboutDS"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/aboutDS"
+        tools:layout_editor_absoluteY="566dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

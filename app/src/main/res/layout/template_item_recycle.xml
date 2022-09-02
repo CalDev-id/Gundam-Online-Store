@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp"
+    android:id="@+id/data">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/template_gambar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cornerRadius="70dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/template_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Gundam"
+            app:layout_constraintBottom_toTopOf="@+id/template_harga"
+            app:layout_constraintStart_toEndOf="@+id/template_gambar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/template_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="$ 50"
+            app:layout_constraintTop_toBottomOf="@+id/template_title"
+            app:layout_constraintBottom_toBottomOf="@+id/template_gambar"
+            app:layout_constraintStart_toEndOf="@+id/template_gambar"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
